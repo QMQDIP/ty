@@ -21,11 +21,11 @@
                 color: #ebf7f4;
             }
             .body--ready {
-                background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+                background: -webkit-linear-gradient(top, rgb(255, 245, 238) 0%, rgb(255,174,185) 120%);
+                background: -moz-linear-gradient(top, rgb(255, 245, 238) 0%, rgb(255, 174, 185) 120%);
+                background: -o-linear-gradient(top, rgb(255, 245, 238) 0%, rgb(255, 174, 185) 120%);
+                background: -ms-linear-gradient(top, rgb(255, 245, 238) 0%, rgb(255, 174, 185) 120%);
+                background: linear-gradient(top, rgb(255, 245, 238) 0%, rgb(255, 174, 185) 120%);
             }
             .text {
                 position: fixed;
@@ -42,7 +42,7 @@
                 background-size: cover;
                 border-radius: 200px;
                 box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
-                border: 3px solid #00a0ff;
+                border: 3px solid #FFFFFF;
                 opacity: 1;
                 margin: 0 auto;
                 margin-top: 20px;
@@ -92,8 +92,9 @@
         <img src="image/one.jpg" id="logo">  <!-- 头像自定义 -->
     </div>
     <canvas class="canvas" width="1820" height="905"></canvas>
-    <p class="text" style="color: #ffcccc;">我们已经相伴了
-    <span id="span_dt_dt"></span><br>你的男朋友QMQ😘
+    <p class="text" style="color: #FFFAFA;">我们已经相伴了
+    <span id="span_dt_dt1"></span><br>今天是第
+    <span id="span_dt_dt2"></span><br>你的男朋友QMQ❤
     </p>
     <script language="javascript">
         function show_date_time() {
@@ -111,7 +112,8 @@
             e_minsold = (e_hrsold - hrsold) * 60;
             minsold = Math.floor((e_hrsold - hrsold) * 60);
             seconds = Math.floor((e_minsold - minsold) * 60);
-            span_dt_dt.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒 ";
+            span_dt_dt1.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒 ";
+			span_dt_dt2.innerHTML = daysold +1+ " 天 ";
         }
         show_date_time();
     </script>
@@ -120,7 +122,7 @@
             init: function () {
                 S.Drawing.init('.canvas');
                 document.body.classList.add('body--ready');
-				S.UI.simulate("TY❤️|仝宝小宝贝|瘦瘦又可爱|永远记得你|懵懂与机灵|未来很美好|希望你快乐|无论有何事|愿你向光明||不负韶华|心之所向|皆有可能|......|遇见你很高兴！|#time");
+			 S.UI.simulate("TY❤️|很高兴遇见你|永远记得|初次相遇|无比神奇|希望今后|予你欢乐|伴你左右|做你依靠|携手共进|未来可期||感谢有你❤|#countdown 3|I love you！❤||#time");
                 S.Drawing.loop(function () {
                     S.Shape.render();
                 });
@@ -574,7 +576,7 @@
         S.init();
     </script>
     <audio autoplay="autoplay" loop>
-        <source src="http://www.ytmp3.cn/down/57693.mp3" type="audio/mpeg">
+       <source src="image/所念皆星河.mp3" type="audio/mpeg">
     </audio>
 </body>
 </html>
